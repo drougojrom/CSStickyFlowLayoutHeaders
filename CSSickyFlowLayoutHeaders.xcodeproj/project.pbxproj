@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		E0F74F4D1ED8CA090075500C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F4C1ED8CA090075500C /* AppDelegate.swift */; };
-		E0F74F4F1ED8CA090075500C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F4E1ED8CA090075500C /* ViewController.swift */; };
 		E0F74F521ED8CA090075500C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F501ED8CA090075500C /* Main.storyboard */; };
 		E0F74F541ED8CA090075500C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F531ED8CA090075500C /* Assets.xcassets */; };
 		E0F74F571ED8CA090075500C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F551ED8CA090075500C /* LaunchScreen.storyboard */; };
+		E0F74F651ED8CAE30075500C /* CSParallaxHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F611ED8CAE30075500C /* CSParallaxHeader.xib */; };
+		E0F74F661ED8CAE30075500C /* CSSearchBarHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F621ED8CAE30075500C /* CSSearchBarHeader.xib */; };
+		E0F74F671ED8CAE30075500C /* CSGrowHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F631ED8CAE30075500C /* CSGrowHeader.xib */; };
+		E0F74F681ED8CAE30075500C /* CSAlwaysOnTopHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F641ED8CAE30075500C /* CSAlwaysOnTopHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E0F74F491ED8CA090075500C /* CSSickyFlowLayoutHeaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSSickyFlowLayoutHeaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F74F4C1ED8CA090075500C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E0F74F4E1ED8CA090075500C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E0F74F511ED8CA090075500C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0F74F531ED8CA090075500C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0F74F561ED8CA090075500C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0F74F581ED8CA090075500C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0F74F611ED8CAE30075500C /* CSParallaxHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSParallaxHeader.xib; sourceTree = "<group>"; };
+		E0F74F621ED8CAE30075500C /* CSSearchBarHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSSearchBarHeader.xib; sourceTree = "<group>"; };
+		E0F74F631ED8CAE30075500C /* CSGrowHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSGrowHeader.xib; sourceTree = "<group>"; };
+		E0F74F641ED8CAE30075500C /* CSAlwaysOnTopHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSAlwaysOnTopHeader.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,40 @@
 			isa = PBXGroup;
 			children = (
 				E0F74F4C1ED8CA090075500C /* AppDelegate.swift */,
-				E0F74F4E1ED8CA090075500C /* ViewController.swift */,
 				E0F74F501ED8CA090075500C /* Main.storyboard */,
-				E0F74F531ED8CA090075500C /* Assets.xcassets */,
 				E0F74F551ED8CA090075500C /* LaunchScreen.storyboard */,
-				E0F74F581ED8CA090075500C /* Info.plist */,
+				E0F74F5F1ED8CAAD0075500C /* Cells */,
+				E0F74F601ED8CAB20075500C /* ViewControllers */,
+				E0F74F5E1ED8CA9C0075500C /* SupportingFiles */,
 			);
 			path = CSSickyFlowLayoutHeaders;
+			sourceTree = "<group>";
+		};
+		E0F74F5E1ED8CA9C0075500C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E0F74F531ED8CA090075500C /* Assets.xcassets */,
+				E0F74F581ED8CA090075500C /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E0F74F5F1ED8CAAD0075500C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E0F74F611ED8CAE30075500C /* CSParallaxHeader.xib */,
+				E0F74F621ED8CAE30075500C /* CSSearchBarHeader.xib */,
+				E0F74F631ED8CAE30075500C /* CSGrowHeader.xib */,
+				E0F74F641ED8CAE30075500C /* CSAlwaysOnTopHeader.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E0F74F601ED8CAB20075500C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +158,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0F74F571ED8CA090075500C /* LaunchScreen.storyboard in Resources */,
+				E0F74F661ED8CAE30075500C /* CSSearchBarHeader.xib in Resources */,
+				E0F74F651ED8CAE30075500C /* CSParallaxHeader.xib in Resources */,
+				E0F74F671ED8CAE30075500C /* CSGrowHeader.xib in Resources */,
+				E0F74F681ED8CAE30075500C /* CSAlwaysOnTopHeader.xib in Resources */,
 				E0F74F541ED8CA090075500C /* Assets.xcassets in Resources */,
 				E0F74F521ED8CA090075500C /* Main.storyboard in Resources */,
 			);
@@ -137,7 +174,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0F74F4F1ED8CA090075500C /* ViewController.swift in Sources */,
 				E0F74F4D1ED8CA090075500C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
