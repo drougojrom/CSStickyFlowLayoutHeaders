@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD135D40C72BC32C64C03267 /* Pods_CSSickyFlowLayoutHeaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F70330311FF6FE5A2623A564 /* Pods_CSSickyFlowLayoutHeaders.framework */; };
 		E0F74F4D1ED8CA090075500C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F4C1ED8CA090075500C /* AppDelegate.swift */; };
 		E0F74F521ED8CA090075500C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F501ED8CA090075500C /* Main.storyboard */; };
 		E0F74F541ED8CA090075500C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F531ED8CA090075500C /* Assets.xcassets */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C93816BBA73864989CDE1D9 /* Pods-CSSickyFlowLayoutHeaders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSickyFlowLayoutHeaders.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSSickyFlowLayoutHeaders/Pods-CSSickyFlowLayoutHeaders.release.xcconfig"; sourceTree = "<group>"; };
+		53FD889E70F7F25EEC486A4D /* Pods-CSSickyFlowLayoutHeaders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSickyFlowLayoutHeaders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSSickyFlowLayoutHeaders/Pods-CSSickyFlowLayoutHeaders.debug.xcconfig"; sourceTree = "<group>"; };
 		E0F74F491ED8CA090075500C /* CSSickyFlowLayoutHeaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSSickyFlowLayoutHeaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F74F4C1ED8CA090075500C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F74F511ED8CA090075500C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		E0F74F621ED8CAE30075500C /* CSSearchBarHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSSearchBarHeader.xib; sourceTree = "<group>"; };
 		E0F74F631ED8CAE30075500C /* CSGrowHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSGrowHeader.xib; sourceTree = "<group>"; };
 		E0F74F641ED8CAE30075500C /* CSAlwaysOnTopHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSAlwaysOnTopHeader.xib; sourceTree = "<group>"; };
+		F70330311FF6FE5A2623A564 /* Pods_CSSickyFlowLayoutHeaders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSSickyFlowLayoutHeaders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD135D40C72BC32C64C03267 /* Pods_CSSickyFlowLayoutHeaders.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07F099C0E2FCFFF773BB6129 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53FD889E70F7F25EEC486A4D /* Pods-CSSickyFlowLayoutHeaders.debug.xcconfig */,
+				0C93816BBA73864989CDE1D9 /* Pods-CSSickyFlowLayoutHeaders.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD7567738C443EE3C3672F9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F70330311FF6FE5A2623A564 /* Pods_CSSickyFlowLayoutHeaders.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E0F74F401ED8CA090075500C = {
 			isa = PBXGroup;
 			children = (
 				E0F74F4B1ED8CA090075500C /* CSSickyFlowLayoutHeaders */,
 				E0F74F4A1ED8CA090075500C /* Products */,
+				07F099C0E2FCFFF773BB6129 /* Pods */,
+				CD7567738C443EE3C3672F9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0F74F5B1ED8CA090075500C /* Build configuration list for PBXNativeTarget "CSSickyFlowLayoutHeaders" */;
 			buildPhases = (
+				693BCC9FAA78A7E5C2B1C3D0 /* [CP] Check Pods Manifest.lock */,
 				E0F74F451ED8CA090075500C /* Sources */,
 				E0F74F461ED8CA090075500C /* Frameworks */,
 				E0F74F471ED8CA090075500C /* Resources */,
+				53F8712E32463E6F35400C89 /* [CP] Embed Pods Frameworks */,
+				77659560736BEAF5B96ECC0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +195,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53F8712E32463E6F35400C89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSSickyFlowLayoutHeaders/Pods-CSSickyFlowLayoutHeaders-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		693BCC9FAA78A7E5C2B1C3D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		77659560736BEAF5B96ECC0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSSickyFlowLayoutHeaders/Pods-CSSickyFlowLayoutHeaders-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0F74F451ED8CA090075500C /* Sources */ = {
@@ -295,6 +370,7 @@
 		};
 		E0F74F5C1ED8CA090075500C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53FD889E70F7F25EEC486A4D /* Pods-CSSickyFlowLayoutHeaders.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NVMU6WZ9AZ;
@@ -308,6 +384,7 @@
 		};
 		E0F74F5D1ED8CA090075500C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C93816BBA73864989CDE1D9 /* Pods-CSSickyFlowLayoutHeaders.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NVMU6WZ9AZ;
