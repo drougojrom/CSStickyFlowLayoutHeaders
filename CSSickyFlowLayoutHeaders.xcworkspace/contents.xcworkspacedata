@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CSSickyFlowLayoutHeaders.xcodeproj">
+      location = "group:/Users/rom/Desktop/iOS apps/CSSickyFlowLayoutHeaders/CSStickyFlowLayoutHeaders.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

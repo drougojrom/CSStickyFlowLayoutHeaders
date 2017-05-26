@@ -20,12 +20,16 @@
 		E0F74F6E1ED8D1AD0075500C /* CSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F6D1ED8D1AD0075500C /* CSCell.swift */; };
 		E0F74F701ED8D30F0075500C /* CSSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F6F1ED8D30F0075500C /* CSSectionHeader.swift */; };
 		E0F74F721ED8D3500075500C /* CSAlwaysOnTopHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F711ED8D3500075500C /* CSAlwaysOnTopHeader.swift */; };
+		E0F74F741ED8D7B30075500C /* CSParallaxHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F731ED8D7B30075500C /* CSParallaxHeaderViewController.swift */; };
+		E0F74F761ED8D8480075500C /* CSLockedHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F751ED8D8480075500C /* CSLockedHeaderViewController.swift */; };
+		E0F74F781ED8D8570075500C /* CSGrowHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F771ED8D8570075500C /* CSGrowHeaderViewController.swift */; };
+		E0F74F7A1ED8D8650075500C /* CSStickyParallaxHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F791ED8D8650075500C /* CSStickyParallaxHeaderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C93816BBA73864989CDE1D9 /* Pods-CSSickyFlowLayoutHeaders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSickyFlowLayoutHeaders.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSSickyFlowLayoutHeaders/Pods-CSSickyFlowLayoutHeaders.release.xcconfig"; sourceTree = "<group>"; };
 		53FD889E70F7F25EEC486A4D /* Pods-CSSickyFlowLayoutHeaders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSickyFlowLayoutHeaders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSSickyFlowLayoutHeaders/Pods-CSSickyFlowLayoutHeaders.debug.xcconfig"; sourceTree = "<group>"; };
-		E0F74F491ED8CA090075500C /* CSSickyFlowLayoutHeaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSSickyFlowLayoutHeaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0F74F491ED8CA090075500C /* CSStickyFlowLayoutHeaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSStickyFlowLayoutHeaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F74F4C1ED8CA090075500C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F74F511ED8CA090075500C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0F74F531ED8CA090075500C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +43,10 @@
 		E0F74F6D1ED8D1AD0075500C /* CSCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSCell.swift; sourceTree = "<group>"; };
 		E0F74F6F1ED8D30F0075500C /* CSSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSSectionHeader.swift; sourceTree = "<group>"; };
 		E0F74F711ED8D3500075500C /* CSAlwaysOnTopHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSAlwaysOnTopHeader.swift; sourceTree = "<group>"; };
+		E0F74F731ED8D7B30075500C /* CSParallaxHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSParallaxHeaderViewController.swift; sourceTree = "<group>"; };
+		E0F74F751ED8D8480075500C /* CSLockedHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSLockedHeaderViewController.swift; sourceTree = "<group>"; };
+		E0F74F771ED8D8570075500C /* CSGrowHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSGrowHeaderViewController.swift; sourceTree = "<group>"; };
+		E0F74F791ED8D8650075500C /* CSStickyParallaxHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSStickyParallaxHeaderViewController.swift; sourceTree = "<group>"; };
 		F70330311FF6FE5A2623A564 /* Pods_CSSickyFlowLayoutHeaders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSSickyFlowLayoutHeaders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,7 +82,7 @@
 		E0F74F401ED8CA090075500C = {
 			isa = PBXGroup;
 			children = (
-				E0F74F4B1ED8CA090075500C /* CSSickyFlowLayoutHeaders */,
+				E0F74F4B1ED8CA090075500C /* CSStickyFlowLayoutHeaders */,
 				E0F74F4A1ED8CA090075500C /* Products */,
 				07F099C0E2FCFFF773BB6129 /* Pods */,
 				CD7567738C443EE3C3672F9A /* Frameworks */,
@@ -84,12 +92,12 @@
 		E0F74F4A1ED8CA090075500C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E0F74F491ED8CA090075500C /* CSSickyFlowLayoutHeaders.app */,
+				E0F74F491ED8CA090075500C /* CSStickyFlowLayoutHeaders.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E0F74F4B1ED8CA090075500C /* CSSickyFlowLayoutHeaders */ = {
+		E0F74F4B1ED8CA090075500C /* CSStickyFlowLayoutHeaders */ = {
 			isa = PBXGroup;
 			children = (
 				E0F74F4C1ED8CA090075500C /* AppDelegate.swift */,
@@ -99,6 +107,7 @@
 				E0F74F601ED8CAB20075500C /* ViewControllers */,
 				E0F74F5E1ED8CA9C0075500C /* SupportingFiles */,
 			);
+			name = CSStickyFlowLayoutHeaders;
 			path = CSSickyFlowLayoutHeaders;
 			sourceTree = "<group>";
 		};
@@ -129,6 +138,10 @@
 		E0F74F601ED8CAB20075500C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E0F74F731ED8D7B30075500C /* CSParallaxHeaderViewController.swift */,
+				E0F74F751ED8D8480075500C /* CSLockedHeaderViewController.swift */,
+				E0F74F771ED8D8570075500C /* CSGrowHeaderViewController.swift */,
+				E0F74F791ED8D8650075500C /* CSStickyParallaxHeaderViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -136,9 +149,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E0F74F481ED8CA090075500C /* CSSickyFlowLayoutHeaders */ = {
+		E0F74F481ED8CA090075500C /* CSStickyFlowLayoutHeaders */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E0F74F5B1ED8CA090075500C /* Build configuration list for PBXNativeTarget "CSSickyFlowLayoutHeaders" */;
+			buildConfigurationList = E0F74F5B1ED8CA090075500C /* Build configuration list for PBXNativeTarget "CSStickyFlowLayoutHeaders" */;
 			buildPhases = (
 				693BCC9FAA78A7E5C2B1C3D0 /* [CP] Check Pods Manifest.lock */,
 				E0F74F451ED8CA090075500C /* Sources */,
@@ -151,9 +164,9 @@
 			);
 			dependencies = (
 			);
-			name = CSSickyFlowLayoutHeaders;
+			name = CSStickyFlowLayoutHeaders;
 			productName = CSSickyFlowLayoutHeaders;
-			productReference = E0F74F491ED8CA090075500C /* CSSickyFlowLayoutHeaders.app */;
+			productReference = E0F74F491ED8CA090075500C /* CSStickyFlowLayoutHeaders.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -173,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E0F74F441ED8CA090075500C /* Build configuration list for PBXProject "CSSickyFlowLayoutHeaders" */;
+			buildConfigurationList = E0F74F441ED8CA090075500C /* Build configuration list for PBXProject "CSStickyFlowLayoutHeaders" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -186,7 +199,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E0F74F481ED8CA090075500C /* CSSickyFlowLayoutHeaders */,
+				E0F74F481ED8CA090075500C /* CSStickyFlowLayoutHeaders */,
 			);
 		};
 /* End PBXProject section */
@@ -261,9 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0F74F781ED8D8570075500C /* CSGrowHeaderViewController.swift in Sources */,
+				E0F74F741ED8D7B30075500C /* CSParallaxHeaderViewController.swift in Sources */,
 				E0F74F721ED8D3500075500C /* CSAlwaysOnTopHeader.swift in Sources */,
+				E0F74F761ED8D8480075500C /* CSLockedHeaderViewController.swift in Sources */,
 				E0F74F701ED8D30F0075500C /* CSSectionHeader.swift in Sources */,
 				E0F74F4D1ED8CA090075500C /* AppDelegate.swift in Sources */,
+				E0F74F7A1ED8D8650075500C /* CSStickyParallaxHeaderViewController.swift in Sources */,
 				E0F74F6A1ED8CC200075500C /* MyPulling.swift in Sources */,
 				E0F74F6E1ED8D1AD0075500C /* CSCell.swift in Sources */,
 			);
@@ -417,7 +434,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E0F74F441ED8CA090075500C /* Build configuration list for PBXProject "CSSickyFlowLayoutHeaders" */ = {
+		E0F74F441ED8CA090075500C /* Build configuration list for PBXProject "CSStickyFlowLayoutHeaders" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E0F74F591ED8CA090075500C /* Debug */,
@@ -426,7 +443,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0F74F5B1ED8CA090075500C /* Build configuration list for PBXNativeTarget "CSSickyFlowLayoutHeaders" */ = {
+		E0F74F5B1ED8CA090075500C /* Build configuration list for PBXNativeTarget "CSStickyFlowLayoutHeaders" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E0F74F5C1ED8CA090075500C /* Debug */,
