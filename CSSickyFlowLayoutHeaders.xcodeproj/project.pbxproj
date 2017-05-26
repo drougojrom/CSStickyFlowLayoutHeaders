@@ -18,6 +18,8 @@
 		E0F74F681ED8CAE30075500C /* CSAlwaysOnTopHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F641ED8CAE30075500C /* CSAlwaysOnTopHeader.xib */; };
 		E0F74F6A1ED8CC200075500C /* MyPulling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F691ED8CC200075500C /* MyPulling.swift */; };
 		E0F74F6E1ED8D1AD0075500C /* CSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F6D1ED8D1AD0075500C /* CSCell.swift */; };
+		E0F74F701ED8D30F0075500C /* CSSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F6F1ED8D30F0075500C /* CSSectionHeader.swift */; };
+		E0F74F721ED8D3500075500C /* CSAlwaysOnTopHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F711ED8D3500075500C /* CSAlwaysOnTopHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		E0F74F641ED8CAE30075500C /* CSAlwaysOnTopHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSAlwaysOnTopHeader.xib; sourceTree = "<group>"; };
 		E0F74F691ED8CC200075500C /* MyPulling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPulling.swift; sourceTree = "<group>"; };
 		E0F74F6D1ED8D1AD0075500C /* CSCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSCell.swift; sourceTree = "<group>"; };
+		E0F74F6F1ED8D30F0075500C /* CSSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSSectionHeader.swift; sourceTree = "<group>"; };
+		E0F74F711ED8D3500075500C /* CSAlwaysOnTopHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSAlwaysOnTopHeader.swift; sourceTree = "<group>"; };
 		F70330311FF6FE5A2623A564 /* Pods_CSSickyFlowLayoutHeaders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSSickyFlowLayoutHeaders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,6 +120,8 @@
 				E0F74F641ED8CAE30075500C /* CSAlwaysOnTopHeader.xib */,
 				E0F74F691ED8CC200075500C /* MyPulling.swift */,
 				E0F74F6D1ED8D1AD0075500C /* CSCell.swift */,
+				E0F74F6F1ED8D30F0075500C /* CSSectionHeader.swift */,
+				E0F74F711ED8D3500075500C /* CSAlwaysOnTopHeader.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -255,6 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0F74F721ED8D3500075500C /* CSAlwaysOnTopHeader.swift in Sources */,
+				E0F74F701ED8D30F0075500C /* CSSectionHeader.swift in Sources */,
 				E0F74F4D1ED8CA090075500C /* AppDelegate.swift in Sources */,
 				E0F74F6A1ED8CC200075500C /* MyPulling.swift in Sources */,
 				E0F74F6E1ED8D1AD0075500C /* CSCell.swift in Sources */,
