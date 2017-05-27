@@ -23,7 +23,7 @@ class CSLockedHeaderViewController: UICollectionViewController {
         
         let headerNib = UINib(nibName: "CSSearchBarHeader", bundle: nil)
         self.collectionView?.register(headerNib, forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: "header")
-        self.layout?.parallaxHeaderReferenceSize = CGSize(width: self.view.frame.size.width, height: 430)
+        self.layout?.parallaxHeaderReferenceSize = CGSize(width: self.view.frame.size.width, height: 100)
 
         self.collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(44, 0, 0, 0)
         let add = UIBarButtonItem(title: "add", style: .plain, target: self, action: #selector(self.add))
