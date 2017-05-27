@@ -7,18 +7,17 @@
 //
 
 import UIKit
-import CSStickyHeaderFlowLayout
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "cell"
 
 class CSParallaxHeaderViewController: UICollectionViewController {
     
-    let sections: Array<Dictionary<String, String>> = [["Twitter":"http://twitter.com",
+    let sections: Dictionary<String, String> = ["Twitter":"http://twitter.com",
                                                 "Facebook":"http://facebook.com",
                                                 "Tumblr":"http://tumblr.com",
                                                 "Pinterest":"http://pinterest.com",
                                                 "Instagram":"http://instagram.com",
-                                                "Github":"http://github.com"]]
+                                                "Github":"http://github.com"]
     
     private var layout : CSStickyHeaderFlowLayout? {
         return self.collectionView?.collectionViewLayout as? CSStickyHeaderFlowLayout
@@ -33,7 +32,7 @@ class CSParallaxHeaderViewController: UICollectionViewController {
         // Register cell classes
         let headerNib = UINib(nibName: "CSParallaxHeader", bundle: nil)
         self.collectionView?.register(headerNib, forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: "header")
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView?.register(UINib(nibName: "CSCell", bundle: nil), forCellWithReuseIdentifier: "cell")
 
         // Do any additional setup after loading the view.
     }
@@ -63,9 +62,8 @@ class CSParallaxHeaderViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CSCell
-        let obj = self.sections[indexPath.section]
-        
-        cell.textLabel.text = obj.values.first
+        let obj = self.sections
+        cell.textLabel?.text = obj.values.first
         
         return cell
     }
@@ -73,12 +71,12 @@ class CSParallaxHeaderViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         if kind == CSStickyHeaderParallaxHeader {
-            let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath) 
+            let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath) as! CSSectionHeader
             return cell
         } else {
-            let obj = self.sections[indexPath.section]
+            let obj = self.sections
             let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "sectionHeader", for: indexPath) as! CSSectionHeader
-            cell.textLabel.text = obj.keys.first
+            cell.text.text = obj.keys.first
             return cell
         }
     }

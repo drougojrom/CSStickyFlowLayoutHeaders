@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CSStickyHeaderFlowLayout
 
 class CSAlwaysOnTopHeader: CSCell {
 

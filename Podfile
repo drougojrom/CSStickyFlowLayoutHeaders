@@ -6,6 +6,5 @@ target 'CSSickyFlowLayoutHeaders' do
   use_frameworks!
 
   # Pods for CSSickyFlowLayoutHeaders
-  pod 'CSStickyHeaderFlowLayout'
 
 end

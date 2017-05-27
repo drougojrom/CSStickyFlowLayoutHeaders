@@ -10,7 +10,6 @@ import UIKit
 
 class CSSectionHeader: UICollectionReusableView {
     
-    @IBOutlet weak var textLabel: UILabel!
-    
+    @IBOutlet weak var text: UILabel!
         
 }

@@ -8,20 +8,50 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "cell"
 
 class CSLockedHeaderViewController: UICollectionViewController {
 
+    var sections: Array<Dictionary<String, String>> = [["":""]]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
+        
+        let headerNib = UINib(nibName: "CSSearchBarHeader", bundle: nil)
+        self.collectionView?.register(headerNib, forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: "header")
+        
+        self.collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(44, 0, 0, 0)
+        let add = UIBarButtonItem(title: "add", style: .plain, target: self, action: #selector(self.add))
         // Do any additional setup after loading the view.
+        self.navigationItem.rightBarButtonItem = add
+        self.add()
+    }
+    
+    func add() {
+        
+        self.collectionView?.performBatchUpdates({ 
+            let new: Array<Dictionary<String, String>> = [["Twitter":"http://twitter.com",
+                                                           "Facebook":"http://facebook.com",
+                                                           "Tumblr":"http://tumblr.com",
+                                                           "Pinterest":"http://pinterest.com",
+                                                           "Instagram":"http://instagram.com",
+                                                           "Github":"http://github.com"]]
+            
+            self.sections = new
+            let set = NSMutableIndexSet()
+            let indexPaths = NSMutableArray(array: [])
+            
+            let startIndex = 0
+            
+            for (index, value) in new.enumerated() {
+                let indexPath = IndexPath(item: 0, section: index + startIndex)
+                indexPaths.add(indexPath)
+                set.add(startIndex + index)
+            }
+            self.collectionView?.insertSections(set as IndexSet)
+            self.collectionView?.insertItems(at: indexPaths as! [IndexPath])
+        }, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,66 +59,37 @@ class CSLockedHeaderViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
-
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return sections.count
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 1
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CSCell
+        let obj = self.sections[indexPath.section]
+        
+        cell.textLabel.text = obj.values.first
     
         return cell
     }
 
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
     
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        if kind == CSStickyHeaderParallaxHeader {
+            let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
+            return cell
+        } else {
+            let obj = self.sections[indexPath.section]
+            let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "sectionHeader", for: indexPath) as! CSSectionHeader
+            //cell.textLabel.text = obj.keys.first
+            return cell
+        }
     }
-    */
-
 }

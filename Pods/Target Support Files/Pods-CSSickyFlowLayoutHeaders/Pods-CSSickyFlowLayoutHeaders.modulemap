@@ -1,6 +1,0 @@
-framework module Pods_CSSickyFlowLayoutHeaders {
-  umbrella header "Pods-CSSickyFlowLayoutHeaders-umbrella.h"
-
-  export *
-  module * { export * }
-}

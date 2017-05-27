@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD135D40C72BC32C64C03267 /* Pods_CSSickyFlowLayoutHeaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F70330311FF6FE5A2623A564 /* Pods_CSSickyFlowLayoutHeaders.framework */; };
 		E0F74F4D1ED8CA090075500C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F4C1ED8CA090075500C /* AppDelegate.swift */; };
 		E0F74F521ED8CA090075500C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F501ED8CA090075500C /* Main.storyboard */; };
 		E0F74F541ED8CA090075500C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F531ED8CA090075500C /* Assets.xcassets */; };
@@ -17,18 +16,19 @@
 		E0F74F671ED8CAE30075500C /* CSGrowHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F631ED8CAE30075500C /* CSGrowHeader.xib */; };
 		E0F74F681ED8CAE30075500C /* CSAlwaysOnTopHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F641ED8CAE30075500C /* CSAlwaysOnTopHeader.xib */; };
 		E0F74F6A1ED8CC200075500C /* MyPulling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F691ED8CC200075500C /* MyPulling.swift */; };
-		E0F74F6E1ED8D1AD0075500C /* CSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F6D1ED8D1AD0075500C /* CSCell.swift */; };
 		E0F74F701ED8D30F0075500C /* CSSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F6F1ED8D30F0075500C /* CSSectionHeader.swift */; };
 		E0F74F721ED8D3500075500C /* CSAlwaysOnTopHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F711ED8D3500075500C /* CSAlwaysOnTopHeader.swift */; };
 		E0F74F741ED8D7B30075500C /* CSParallaxHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F731ED8D7B30075500C /* CSParallaxHeaderViewController.swift */; };
 		E0F74F761ED8D8480075500C /* CSLockedHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F751ED8D8480075500C /* CSLockedHeaderViewController.swift */; };
 		E0F74F781ED8D8570075500C /* CSGrowHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F771ED8D8570075500C /* CSGrowHeaderViewController.swift */; };
 		E0F74F7A1ED8D8650075500C /* CSStickyParallaxHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F791ED8D8650075500C /* CSStickyParallaxHeaderViewController.swift */; };
+		E0F74F801ED98EDB0075500C /* CSStickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F7D1ED98EDB0075500C /* CSStickyHeaderFlowLayout.m */; };
+		E0F74F811ED98EDB0075500C /* CSStickyHeaderFlowLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F7F1ED98EDB0075500C /* CSStickyHeaderFlowLayoutAttributes.m */; };
+		E0F74F841ED9945A0075500C /* CSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F821ED9945A0075500C /* CSCell.swift */; };
+		E0F74F851ED9945A0075500C /* CSCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F831ED9945A0075500C /* CSCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C93816BBA73864989CDE1D9 /* Pods-CSSickyFlowLayoutHeaders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSickyFlowLayoutHeaders.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSSickyFlowLayoutHeaders/Pods-CSSickyFlowLayoutHeaders.release.xcconfig"; sourceTree = "<group>"; };
-		53FD889E70F7F25EEC486A4D /* Pods-CSSickyFlowLayoutHeaders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSickyFlowLayoutHeaders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSSickyFlowLayoutHeaders/Pods-CSSickyFlowLayoutHeaders.debug.xcconfig"; sourceTree = "<group>"; };
 		E0F74F491ED8CA090075500C /* CSStickyFlowLayoutHeaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSStickyFlowLayoutHeaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F74F4C1ED8CA090075500C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F74F511ED8CA090075500C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,14 +40,19 @@
 		E0F74F631ED8CAE30075500C /* CSGrowHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSGrowHeader.xib; sourceTree = "<group>"; };
 		E0F74F641ED8CAE30075500C /* CSAlwaysOnTopHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSAlwaysOnTopHeader.xib; sourceTree = "<group>"; };
 		E0F74F691ED8CC200075500C /* MyPulling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPulling.swift; sourceTree = "<group>"; };
-		E0F74F6D1ED8D1AD0075500C /* CSCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSCell.swift; sourceTree = "<group>"; };
 		E0F74F6F1ED8D30F0075500C /* CSSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSSectionHeader.swift; sourceTree = "<group>"; };
 		E0F74F711ED8D3500075500C /* CSAlwaysOnTopHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSAlwaysOnTopHeader.swift; sourceTree = "<group>"; };
 		E0F74F731ED8D7B30075500C /* CSParallaxHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSParallaxHeaderViewController.swift; sourceTree = "<group>"; };
 		E0F74F751ED8D8480075500C /* CSLockedHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSLockedHeaderViewController.swift; sourceTree = "<group>"; };
 		E0F74F771ED8D8570075500C /* CSGrowHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSGrowHeaderViewController.swift; sourceTree = "<group>"; };
 		E0F74F791ED8D8650075500C /* CSStickyParallaxHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSStickyParallaxHeaderViewController.swift; sourceTree = "<group>"; };
-		F70330311FF6FE5A2623A564 /* Pods_CSSickyFlowLayoutHeaders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSSickyFlowLayoutHeaders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0F74F7B1ED98EDA0075500C /* CSStickyFlowLayoutHeaders-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSStickyFlowLayoutHeaders-Bridging-Header.h"; sourceTree = "<group>"; };
+		E0F74F7C1ED98EDB0075500C /* CSStickyHeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayout.h; sourceTree = "<group>"; };
+		E0F74F7D1ED98EDB0075500C /* CSStickyHeaderFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSStickyHeaderFlowLayout.m; sourceTree = "<group>"; };
+		E0F74F7E1ED98EDB0075500C /* CSStickyHeaderFlowLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayoutAttributes.h; sourceTree = "<group>"; };
+		E0F74F7F1ED98EDB0075500C /* CSStickyHeaderFlowLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSStickyHeaderFlowLayoutAttributes.m; sourceTree = "<group>"; };
+		E0F74F821ED9945A0075500C /* CSCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSCell.swift; sourceTree = "<group>"; };
+		E0F74F831ED9945A0075500C /* CSCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,37 +60,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD135D40C72BC32C64C03267 /* Pods_CSSickyFlowLayoutHeaders.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07F099C0E2FCFFF773BB6129 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				53FD889E70F7F25EEC486A4D /* Pods-CSSickyFlowLayoutHeaders.debug.xcconfig */,
-				0C93816BBA73864989CDE1D9 /* Pods-CSSickyFlowLayoutHeaders.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		CD7567738C443EE3C3672F9A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F70330311FF6FE5A2623A564 /* Pods_CSSickyFlowLayoutHeaders.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		E0F74F401ED8CA090075500C = {
 			isa = PBXGroup;
 			children = (
 				E0F74F4B1ED8CA090075500C /* CSStickyFlowLayoutHeaders */,
 				E0F74F4A1ED8CA090075500C /* Products */,
-				07F099C0E2FCFFF773BB6129 /* Pods */,
-				CD7567738C443EE3C3672F9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +88,14 @@
 				E0F74F4C1ED8CA090075500C /* AppDelegate.swift */,
 				E0F74F501ED8CA090075500C /* Main.storyboard */,
 				E0F74F551ED8CA090075500C /* LaunchScreen.storyboard */,
+				E0F74F7C1ED98EDB0075500C /* CSStickyHeaderFlowLayout.h */,
+				E0F74F7D1ED98EDB0075500C /* CSStickyHeaderFlowLayout.m */,
+				E0F74F7E1ED98EDB0075500C /* CSStickyHeaderFlowLayoutAttributes.h */,
+				E0F74F7F1ED98EDB0075500C /* CSStickyHeaderFlowLayoutAttributes.m */,
 				E0F74F5F1ED8CAAD0075500C /* Cells */,
 				E0F74F601ED8CAB20075500C /* ViewControllers */,
 				E0F74F5E1ED8CA9C0075500C /* SupportingFiles */,
+				E0F74F7B1ED98EDA0075500C /* CSStickyFlowLayoutHeaders-Bridging-Header.h */,
 			);
 			name = CSStickyFlowLayoutHeaders;
 			path = CSSickyFlowLayoutHeaders;
@@ -128,9 +118,10 @@
 				E0F74F631ED8CAE30075500C /* CSGrowHeader.xib */,
 				E0F74F641ED8CAE30075500C /* CSAlwaysOnTopHeader.xib */,
 				E0F74F691ED8CC200075500C /* MyPulling.swift */,
-				E0F74F6D1ED8D1AD0075500C /* CSCell.swift */,
 				E0F74F6F1ED8D30F0075500C /* CSSectionHeader.swift */,
 				E0F74F711ED8D3500075500C /* CSAlwaysOnTopHeader.swift */,
+				E0F74F821ED9945A0075500C /* CSCell.swift */,
+				E0F74F831ED9945A0075500C /* CSCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -153,12 +144,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0F74F5B1ED8CA090075500C /* Build configuration list for PBXNativeTarget "CSStickyFlowLayoutHeaders" */;
 			buildPhases = (
-				693BCC9FAA78A7E5C2B1C3D0 /* [CP] Check Pods Manifest.lock */,
 				E0F74F451ED8CA090075500C /* Sources */,
 				E0F74F461ED8CA090075500C /* Frameworks */,
 				E0F74F471ED8CA090075500C /* Resources */,
-				53F8712E32463E6F35400C89 /* [CP] Embed Pods Frameworks */,
-				77659560736BEAF5B96ECC0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,6 +170,7 @@
 					E0F74F481ED8CA090075500C = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = NVMU6WZ9AZ;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -210,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0F74F571ED8CA090075500C /* LaunchScreen.storyboard in Resources */,
+				E0F74F851ED9945A0075500C /* CSCell.xib in Resources */,
 				E0F74F661ED8CAE30075500C /* CSSearchBarHeader.xib in Resources */,
 				E0F74F651ED8CAE30075500C /* CSParallaxHeader.xib in Resources */,
 				E0F74F671ED8CAE30075500C /* CSGrowHeader.xib in Resources */,
@@ -221,54 +211,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		53F8712E32463E6F35400C89 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSSickyFlowLayoutHeaders/Pods-CSSickyFlowLayoutHeaders-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		693BCC9FAA78A7E5C2B1C3D0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		77659560736BEAF5B96ECC0C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSSickyFlowLayoutHeaders/Pods-CSSickyFlowLayoutHeaders-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		E0F74F451ED8CA090075500C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -278,11 +220,13 @@
 				E0F74F741ED8D7B30075500C /* CSParallaxHeaderViewController.swift in Sources */,
 				E0F74F721ED8D3500075500C /* CSAlwaysOnTopHeader.swift in Sources */,
 				E0F74F761ED8D8480075500C /* CSLockedHeaderViewController.swift in Sources */,
+				E0F74F841ED9945A0075500C /* CSCell.swift in Sources */,
 				E0F74F701ED8D30F0075500C /* CSSectionHeader.swift in Sources */,
+				E0F74F801ED98EDB0075500C /* CSStickyHeaderFlowLayout.m in Sources */,
 				E0F74F4D1ED8CA090075500C /* AppDelegate.swift in Sources */,
 				E0F74F7A1ED8D8650075500C /* CSStickyParallaxHeaderViewController.swift in Sources */,
+				E0F74F811ED98EDB0075500C /* CSStickyHeaderFlowLayoutAttributes.m in Sources */,
 				E0F74F6A1ED8CC200075500C /* MyPulling.swift in Sources */,
-				E0F74F6E1ED8D1AD0075500C /* CSCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,30 +347,33 @@
 		};
 		E0F74F5C1ED8CA090075500C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53FD889E70F7F25EEC486A4D /* Pods-CSSickyFlowLayoutHeaders.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = NVMU6WZ9AZ;
 				INFOPLIST_FILE = CSSickyFlowLayoutHeaders/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ru-platform.CSSickyFlowLayoutHeaders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CSSickyFlowLayoutHeaders/CSStickyFlowLayoutHeaders-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		E0F74F5D1ED8CA090075500C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C93816BBA73864989CDE1D9 /* Pods-CSSickyFlowLayoutHeaders.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = NVMU6WZ9AZ;
 				INFOPLIST_FILE = CSSickyFlowLayoutHeaders/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ru-platform.CSSickyFlowLayoutHeaders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CSSickyFlowLayoutHeaders/CSStickyFlowLayoutHeaders-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

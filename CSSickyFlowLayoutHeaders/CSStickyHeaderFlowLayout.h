@@ -15,7 +15,7 @@ FOUNDATION_EXPORT double CSStickyHeaderFlowLayoutVersionNumber;
 FOUNDATION_EXPORT const unsigned char CSStickyHeaderFlowLayoutVersionString[];
 
 // Import All public headers
-#import <CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayoutAttributes.h>
+#import "CSStickyHeaderFlowLayoutAttributes.h"
 
 #pragma mark -
 

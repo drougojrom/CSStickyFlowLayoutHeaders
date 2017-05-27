@@ -12,42 +12,43 @@
         <!--Parallax-->
         <scene sceneID="VmY-dB-hls">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="LhR-ei-xE7" customClass="CSParallaxHeaderViewController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="JsR-ex-j1N">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="LhR-ei-xE7" customClass="CSParallaxHeaderViewController" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="JsR-ex-j1N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mnI-AW-t4N" customClass="CSStickyHeaderFlowLayout" customModule="CSStickyHeaderFlowLayout">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mnI-AW-t4N" customClass="CSStickyHeaderFlowLayout">
                             <size key="itemSize" width="320" height="80"/>
                             <size key="headerReferenceSize" width="0.0" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="D6L-VX-rxb" customClass="CSCell">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="wFQ-yp-k0Q" customClass="CSCell" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target">
                                 <rect key="frame" x="27.5" y="50" width="320" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luo-SB-IYs">
-                                            <rect key="frame" x="20" y="29" width="280" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1P-zn-cJz">
+                                            <rect key="frame" x="139" y="30" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </view>
-                                <color key="backgroundColor" red="0.90508097409999999" green="0.90508097409999999" blue="0.90508097409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="customSize" width="320" height="80"/>
+                                <constraints>
+                                    <constraint firstItem="X1P-zn-cJz" firstAttribute="centerY" secondItem="wFQ-yp-k0Q" secondAttribute="centerY" id="1Jb-j1-xuW"/>
+                                    <constraint firstItem="X1P-zn-cJz" firstAttribute="centerX" secondItem="wFQ-yp-k0Q" secondAttribute="centerX" id="ZJN-T6-dL9"/>
+                                </constraints>
                                 <connections>
-                                    <outlet property="textLabel" destination="Luo-SB-IYs" id="IDe-oo-OB8"/>
+                                    <outlet property="textLabel" destination="X1P-zn-cJz" id="dOJ-aF-QFt"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionHeader" id="kZr-Rv-u4F" customClass="CSSectionHeader">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionHeader" id="kZr-Rv-u4F" customClass="CSSectionHeader" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
@@ -68,21 +69,20 @@
                                 <constraint firstAttribute="trailing" secondItem="tjq-5y-JuK" secondAttribute="trailing" constant="14" id="Yg9-P4-Z8Q"/>
                             </constraints>
                             <connections>
-                                <outlet property="textLabel" destination="GQI-x4-Mjq" id="6G7-js-U3s"/>
+                                <outlet property="text" destination="GQI-x4-Mjq" id="tyk-mY-EcD"/>
                             </connections>
                         </collectionReusableView>
                         <connections>
-                            <outlet property="dataSource" destination="LhR-ei-xE7" id="QAh-7L-YQf"/>
-                            <outlet property="delegate" destination="LhR-ei-xE7" id="qe9-Ay-xgv"/>
+                            <outlet property="dataSource" destination="LhR-ei-xE7" id="BUY-kE-hxo"/>
+                            <outlet property="delegate" destination="LhR-ei-xE7" id="jeg-9c-pi9"/>
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Parallax" id="ssJ-nZ-sKi">
-                        <barButtonItem key="leftBarButtonItem" title="Reload" id="b9z-38-lyd">
-                            <connections>
-                                <action selector="reloadButtonDidPress:" destination="LhR-ei-xE7" id="yhL-Ks-xt9"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Reload" id="b9z-38-lyd"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="JsR-ex-j1N" id="09f-uX-uwz"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6yE-Vh-OJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,6 +94,7 @@
                 <navigationController definesPresentationContext="YES" id="Bva-E1-SFm" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Parallax" id="wED-ba-eDz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KdK-kE-qDB">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -111,6 +112,7 @@
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="abs-r3-X4S">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
@@ -133,7 +135,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lVS-Ql-vzY" customClass="CSStickyHeaderFlowLayout" customModule="CSStickyHeaderFlowLayout">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lVS-Ql-vzY" customClass="CSStickyHeaderFlowLayout">
                             <size key="itemSize" width="320" height="80"/>
                             <size key="headerReferenceSize" width="0.0" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -197,6 +199,7 @@
                 <navigationController definesPresentationContext="YES" id="3Al-yw-ZnW" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Locked" id="ey3-fY-jMf"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UEa-Wl-VU3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -215,7 +218,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xhk-P1-D7k" customClass="CSStickyHeaderFlowLayout" customModule="CSStickyHeaderFlowLayout">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xhk-P1-D7k" customClass="CSStickyHeaderFlowLayout">
                             <size key="itemSize" width="320" height="80"/>
                             <size key="headerReferenceSize" width="0.0" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -279,6 +282,7 @@
                 <navigationController definesPresentationContext="YES" id="nHb-8N-3cy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Grow" id="hpQ-H5-o6t"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="l6P-U6-NzA">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -296,7 +300,7 @@
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" id="n5Z-NT-1OR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FWK-ae-ALv" customClass="CSStickyHeaderFlowLayout" customModule="CSStickyHeaderFlowLayout">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FWK-ae-ALv" customClass="CSStickyHeaderFlowLayout">
                             <size key="itemSize" width="320" height="40"/>
                             <size key="headerReferenceSize" width="0.0" height="40"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
