@@ -14,13 +14,17 @@ class CSLockedHeaderViewController: UICollectionViewController {
 
     var sections: Array<Dictionary<String, String>> = [["":""]]
     
+    private var layout : CSStickyHeaderFlowLayout? {
+        return self.collectionView?.collectionViewLayout as? CSStickyHeaderFlowLayout
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let headerNib = UINib(nibName: "CSSearchBarHeader", bundle: nil)
         self.collectionView?.register(headerNib, forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: "header")
-        
+        self.layout?.parallaxHeaderReferenceSize = CGSize(width: self.view.frame.size.width, height: 430)
+
         self.collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(44, 0, 0, 0)
         let add = UIBarButtonItem(title: "add", style: .plain, target: self, action: #selector(self.add))
         // Do any additional setup after loading the view.

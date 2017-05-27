@@ -13,7 +13,7 @@
         <scene sceneID="VmY-dB-hls">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="LhR-ei-xE7" customClass="CSParallaxHeaderViewController" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="JsR-ex-j1N">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="JsR-ex-j1N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -296,8 +296,8 @@
         <!--Grow-->
         <scene sceneID="AKZ-66-rim">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="hVi-mn-cNs" customClass="CSStickyParallaxHeaderViewController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" id="n5Z-NT-1OR">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="hVi-mn-cNs" customClass="CSStickyParallaxHeaderViewController" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" indicatorStyle="white" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" id="n5Z-NT-1OR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FWK-ae-ALv" customClass="CSStickyHeaderFlowLayout">
@@ -307,7 +307,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Oi7-Zf-Nv8" customClass="CSCell">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Oi7-Zf-Nv8" customClass="CSCell" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target">
                                 <rect key="frame" x="27.5" y="40" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -330,7 +330,7 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionHeader" id="lkQ-0g-Gl6" customClass="CSSectionHeader">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionHeader" id="lkQ-0g-Gl6" customClass="CSSectionHeader" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
@@ -351,6 +351,9 @@
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="Always On Top" id="mtt-ye-l0c"/>
                     <navigationItem key="navigationItem" title="Grow" id="dPY-TT-pV6"/>
+                    <connections>
+                        <outlet property="collectionView" destination="n5Z-NT-1OR" id="gdR-hk-Fs4"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlL-AJ-K1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
