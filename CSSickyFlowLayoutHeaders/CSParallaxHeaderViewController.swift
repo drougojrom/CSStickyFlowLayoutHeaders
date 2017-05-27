@@ -27,11 +27,12 @@ class CSParallaxHeaderViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        // Register cell classes
         let headerNib = UINib(nibName: "CSParallaxHeader", bundle: nil)
         self.collectionView?.register(headerNib, forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: "header")
+        
+        self.layout?.parallaxHeaderReferenceSize = CGSize(width: self.view.frame.size.width, height: 100)
+
+        
         self.collectionView?.register(UINib(nibName: "CSCell", bundle: nil), forCellWithReuseIdentifier: "cell")
 
         // Do any additional setup after loading the view.
@@ -50,20 +51,18 @@ class CSParallaxHeaderViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return self.sections.count
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
         return 1
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CSCell
-        let obj = self.sections
-        cell.textLabel?.text = obj.values.first
+        let obj = Array(self.sections)[indexPath.section]
+        cell.textLabel?.text = obj.value
         
         return cell
     }
@@ -71,14 +70,17 @@ class CSParallaxHeaderViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         if kind == CSStickyHeaderParallaxHeader {
-            let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath) as! CSSectionHeader
+            let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
             return cell
-        } else {
-            let obj = self.sections
+        } else if kind == UICollectionElementKindSectionHeader {
+
             let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "sectionHeader", for: indexPath) as! CSSectionHeader
-            cell.text.text = obj.keys.first
+            let obj = Array(self.sections)[indexPath.section]
+            cell.text?.text = obj.value
             return cell
         }
+        
+        return UICollectionReusableView()
     }
 }
 
