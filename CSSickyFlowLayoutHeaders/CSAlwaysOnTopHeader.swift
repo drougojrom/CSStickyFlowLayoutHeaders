@@ -32,4 +32,7 @@ class CSAlwaysOnTopHeader: CSCell {
         UIView.commitAnimations()
     }
 
+    @IBAction func actionPrint(_ sender: Any) {
+        print("YEAH!")
+    }
 }

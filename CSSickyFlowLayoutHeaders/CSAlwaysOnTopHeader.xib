@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="MVH-Hh-49Q" customClass="CSAlwaysOnTopHeader">
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="MVH-Hh-49Q" customClass="CSAlwaysOnTopHeader" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="426"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -69,6 +69,9 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionPrint:" destination="MVH-Hh-49Q" eventType="touchUpInside" id="2IU-8V-Q8v"/>
+                                        </connections>
                                     </button>
                                     <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="SPW-Vr-XZC">
                                         <rect key="frame" x="20" y="0.0" width="280" height="44"/>
@@ -145,6 +148,10 @@
                 <constraint firstItem="3y9-9q-T6E" firstAttribute="top" secondItem="MVH-Hh-49Q" secondAttribute="top" id="rfG-zQ-7bl"/>
             </constraints>
             <size key="customSize" width="320" height="426"/>
+            <connections>
+                <outlet property="searchBar" destination="SPW-Vr-XZC" id="nGD-5M-dRj"/>
+                <outlet property="titleLabel" destination="4Hg-Bk-Mdr" id="VKn-H5-BB5"/>
+            </connections>
         </collectionViewCell>
     </objects>
     <resources>

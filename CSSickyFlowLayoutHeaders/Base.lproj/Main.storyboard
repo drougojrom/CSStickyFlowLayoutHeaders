@@ -130,8 +130,8 @@
         <!--Locked-->
         <scene sceneID="RYv-CU-BcK">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="un6-zm-woq" customClass="CSLockedHeaderViewController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" id="4r9-gG-BOv">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="un6-zm-woq" customClass="CSLockedHeaderViewController" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" id="4r9-gG-BOv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -142,7 +142,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="qHp-gb-xEB" customClass="CSCell">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="qHp-gb-xEB" customClass="CSCell" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target">
                                 <rect key="frame" x="27.5" y="50" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -161,11 +161,11 @@
                                 <color key="backgroundColor" red="0.90508097409999999" green="0.90508097409999999" blue="0.90508097409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="customSize" width="320" height="80"/>
                                 <connections>
-                                    <outlet property="textLabel" destination="EWT-dU-cgB" id="xuJ-eD-u3G"/>
+                                    <outlet property="textLabel" destination="EWT-dU-cgB" id="Sfh-Gx-edm"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionHeader" id="UXe-xP-ZXK" customClass="CSSectionHeader">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionHeader" id="UXe-xP-ZXK" customClass="CSSectionHeader" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
@@ -178,9 +178,6 @@
                                 </label>
                             </subviews>
                             <color key="backgroundColor" red="0.01325760516" green="0.54489549100000001" blue="0.69343388080000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <outlet property="textLabel" destination="eKH-Cz-1eo" id="IS7-0X-ife"/>
-                            </connections>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="un6-zm-woq" id="mTS-3H-ZVb"/>

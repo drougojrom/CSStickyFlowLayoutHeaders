@@ -12,7 +12,12 @@ private let reuseIdentifier = "cell"
 
 class CSLockedHeaderViewController: UICollectionViewController {
 
-    var sections: Array<Dictionary<String, String>> = [["":""]]
+    let sections: Dictionary<String, String> = ["Twitter":"http://twitter.com",
+                                           "Facebook":"http://facebook.com",
+                                           "Tumblr":"http://tumblr.com",
+                                           "Pinterest":"http://pinterest.com",
+                                           "Instagram":"http://instagram.com",
+                                           "Github":"http://github.com"]
     
     private var layout : CSStickyHeaderFlowLayout? {
         return self.collectionView?.collectionViewLayout as? CSStickyHeaderFlowLayout
@@ -23,26 +28,26 @@ class CSLockedHeaderViewController: UICollectionViewController {
         
         let headerNib = UINib(nibName: "CSSearchBarHeader", bundle: nil)
         self.collectionView?.register(headerNib, forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: "header")
-        self.layout?.parallaxHeaderReferenceSize = CGSize(width: self.view.frame.size.width, height: 100)
+        self.layout?.parallaxHeaderReferenceSize = CGSize(width: self.view.frame.size.width, height: 40)
 
         self.collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(44, 0, 0, 0)
-        let add = UIBarButtonItem(title: "add", style: .plain, target: self, action: #selector(self.add))
+        //let add = UIBarButtonItem(title: "add", style: .plain, target: self, action: #selector(self.add))
         // Do any additional setup after loading the view.
-        self.navigationItem.rightBarButtonItem = add
-        self.add()
+        //self.navigationItem.rightBarButtonItem = add
+        //self.add()
     }
     
     func add() {
         
         self.collectionView?.performBatchUpdates({ 
-            let new: Array<Dictionary<String, String>> = [["Twitter":"http://twitter.com",
+            let new: Dictionary<String, String> = ["Twitter":"http://twitter.com",
                                                            "Facebook":"http://facebook.com",
                                                            "Tumblr":"http://tumblr.com",
                                                            "Pinterest":"http://pinterest.com",
                                                            "Instagram":"http://instagram.com",
-                                                           "Github":"http://github.com"]]
+                                                           "Github":"http://github.com"]
             
-            self.sections = new
+            //self.sections = new
             let set = NSMutableIndexSet()
             let indexPaths = NSMutableArray(array: [])
             
@@ -76,10 +81,9 @@ class CSLockedHeaderViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CSCell
-        let obj = self.sections[indexPath.section]
+        let obj = Array(self.sections)[indexPath.section]
+        cell.textLabel?.text = obj.value
         
-        cell.textLabel.text = obj.values.first
-    
         return cell
     }
 
@@ -90,9 +94,9 @@ class CSLockedHeaderViewController: UICollectionViewController {
             let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
             return cell
         } else {
-            let obj = self.sections[indexPath.section]
             let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "sectionHeader", for: indexPath) as! CSSectionHeader
-            //cell.textLabel.text = obj.keys.first
+            let obj = Array(self.sections)[indexPath.section]
+            cell.text?.text = obj.value
             return cell
         }
     }
