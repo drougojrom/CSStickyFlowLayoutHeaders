@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E09097411EDB7CB5009EDB80 /* StickyHeaderFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09097401EDB7CB5009EDB80 /* StickyHeaderFlowLayout.swift */; };
 		E0F74F4D1ED8CA090075500C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F4C1ED8CA090075500C /* AppDelegate.swift */; };
 		E0F74F521ED8CA090075500C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F501ED8CA090075500C /* Main.storyboard */; };
 		E0F74F541ED8CA090075500C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F531ED8CA090075500C /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E09097401EDB7CB5009EDB80 /* StickyHeaderFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyHeaderFlowLayout.swift; sourceTree = "<group>"; };
 		E0F74F491ED8CA090075500C /* CSStickyFlowLayoutHeaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSStickyFlowLayoutHeaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F74F4C1ED8CA090075500C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F74F511ED8CA090075500C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				E0F74F4C1ED8CA090075500C /* AppDelegate.swift */,
 				E0F74F501ED8CA090075500C /* Main.storyboard */,
 				E0F74F551ED8CA090075500C /* LaunchScreen.storyboard */,
+				E09097401EDB7CB5009EDB80 /* StickyHeaderFlowLayout.swift */,
 				E0F74F7C1ED98EDB0075500C /* CSStickyHeaderFlowLayout.h */,
 				E0F74F7D1ED98EDB0075500C /* CSStickyHeaderFlowLayout.m */,
 				E0F74F7E1ED98EDB0075500C /* CSStickyHeaderFlowLayoutAttributes.h */,
@@ -238,6 +241,7 @@
 				E0F74F721ED8D3500075500C /* CSAlwaysOnTopHeader.swift in Sources */,
 				E0F74F761ED8D8480075500C /* CSLockedHeaderViewController.swift in Sources */,
 				E0F74F841ED9945A0075500C /* CSCell.swift in Sources */,
+				E09097411EDB7CB5009EDB80 /* StickyHeaderFlowLayout.swift in Sources */,
 				E0F74F701ED8D30F0075500C /* CSSectionHeader.swift in Sources */,
 				E0F74F801ED98EDB0075500C /* CSStickyHeaderFlowLayout.m in Sources */,
 				E0F74F4D1ED8CA090075500C /* AppDelegate.swift in Sources */,
