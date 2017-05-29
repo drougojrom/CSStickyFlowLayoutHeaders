@@ -27,6 +27,9 @@ class CSStickyParallaxHeaderViewController: UICollectionViewController {
         self.collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 0, 0)
         self.collectionView?.register(headerNib, forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: "header")
         
+        if #available(iOS 10, *) {
+            self.collectionView?.isPrefetchingEnabled = false
+        }
 
     }
 

@@ -32,6 +32,9 @@ class CSGrowHeaderViewController: UICollectionViewController {
         
         self.collectionView?.register(headerNib, forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: "header")
 
+        if #available(iOS 10, *) {
+            self.collectionView?.isPrefetchingEnabled = false
+        }
     }
 
     override func didReceiveMemoryWarning() {

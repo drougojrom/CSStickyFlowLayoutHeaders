@@ -31,10 +31,10 @@ class CSLockedHeaderViewController: UICollectionViewController {
         self.layout?.parallaxHeaderReferenceSize = CGSize(width: self.view.frame.size.width, height: 40)
 
         self.collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(44, 0, 0, 0)
-        //let add = UIBarButtonItem(title: "add", style: .plain, target: self, action: #selector(self.add))
-        // Do any additional setup after loading the view.
-        //self.navigationItem.rightBarButtonItem = add
-        //self.add()
+        
+        if #available(iOS 10, *) {
+            self.collectionView?.isPrefetchingEnabled = false
+        }
     }
     
     func add() {

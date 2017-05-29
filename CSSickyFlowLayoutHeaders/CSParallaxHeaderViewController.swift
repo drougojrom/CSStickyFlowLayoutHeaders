@@ -34,7 +34,9 @@ class CSParallaxHeaderViewController: UICollectionViewController {
 
         
         self.collectionView?.register(UINib(nibName: "CSCell", bundle: nil), forCellWithReuseIdentifier: "cell")
-
+        if #available(iOS 10, *) {
+            self.collectionView?.isPrefetchingEnabled = false
+        }
         // Do any additional setup after loading the view.
     }
 
