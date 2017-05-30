@@ -34,9 +34,6 @@ class CSParallaxHeaderViewController: UICollectionViewController {
 
         
         self.collectionView?.register(UINib(nibName: "CSCell", bundle: nil), forCellWithReuseIdentifier: "cell")
-        if #available(iOS 10, *) {
-            self.collectionView?.isPrefetchingEnabled = false
-        }
         // Do any additional setup after loading the view.
     }
 
@@ -78,7 +75,7 @@ class CSParallaxHeaderViewController: UICollectionViewController {
 
             let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "sectionHeader", for: indexPath) as! CSSectionHeader
             let obj = Array(self.sections)[indexPath.section]
-            cell.text?.text = obj.value
+            cell.text?.text = obj.key
             return cell
         }
         

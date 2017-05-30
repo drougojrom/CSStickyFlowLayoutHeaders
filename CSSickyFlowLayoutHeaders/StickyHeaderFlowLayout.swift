@@ -8,6 +8,8 @@
 
 import UIKit
 
+// MARK: swift translation made by Christian Enevoldsen on 13/09/16.
+
 open class CSStickyHeaderFlowLayout: UICollectionViewFlowLayout {
     
     // MARK: Properties

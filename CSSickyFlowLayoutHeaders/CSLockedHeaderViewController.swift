@@ -13,11 +13,11 @@ private let reuseIdentifier = "cell"
 class CSLockedHeaderViewController: UICollectionViewController {
 
     let sections: Dictionary<String, String> = ["Twitter":"http://twitter.com",
-                                           "Facebook":"http://facebook.com",
-                                           "Tumblr":"http://tumblr.com",
-                                           "Pinterest":"http://pinterest.com",
-                                           "Instagram":"http://instagram.com",
-                                           "Github":"http://github.com"]
+                                                "Facebook":"http://facebook.com",
+                                                "Tumblr":"http://tumblr.com",
+                                                "Pinterest":"http://pinterest.com",
+                                                "Instagram":"http://instagram.com",
+                                                "Github":"http://github.com"]
     
     private var layout : CSStickyHeaderFlowLayout? {
         return self.collectionView?.collectionViewLayout as? CSStickyHeaderFlowLayout
@@ -32,9 +32,6 @@ class CSLockedHeaderViewController: UICollectionViewController {
 
         self.collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(44, 0, 0, 0)
         
-        if #available(iOS 10, *) {
-            self.collectionView?.isPrefetchingEnabled = false
-        }
     }
     
     func add() {
@@ -96,7 +93,7 @@ class CSLockedHeaderViewController: UICollectionViewController {
         } else {
             let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "sectionHeader", for: indexPath) as! CSSectionHeader
             let obj = Array(self.sections)[indexPath.section]
-            cell.text?.text = obj.value
+            cell.text?.text = obj.key
             return cell
         }
     }

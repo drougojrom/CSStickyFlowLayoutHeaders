@@ -178,6 +178,9 @@
                                 </label>
                             </subviews>
                             <color key="backgroundColor" red="0.01325760516" green="0.54489549100000001" blue="0.69343388080000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <outlet property="text" destination="eKH-Cz-1eo" id="B2F-t4-oAg"/>
+                            </connections>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="un6-zm-woq" id="mTS-3H-ZVb"/>

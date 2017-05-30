@@ -32,9 +32,6 @@ class CSGrowHeaderViewController: UICollectionViewController {
         
         self.collectionView?.register(headerNib, forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: "header")
 
-        if #available(iOS 10, *) {
-            self.collectionView?.isPrefetchingEnabled = false
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,7 +68,7 @@ class CSGrowHeaderViewController: UICollectionViewController {
             
             let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "sectionHeader", for: indexPath) as! CSSectionHeader
             let obj = Array(self.sections)[indexPath.section]
-            cell.text?.text = obj.value
+            cell.text?.text = obj.key
             return cell
         }
         
