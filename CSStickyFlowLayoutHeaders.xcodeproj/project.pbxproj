@@ -49,7 +49,6 @@
 		E0F74F751ED8D8480075500C /* CSLockedHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSLockedHeaderViewController.swift; sourceTree = "<group>"; };
 		E0F74F771ED8D8570075500C /* CSGrowHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSGrowHeaderViewController.swift; sourceTree = "<group>"; };
 		E0F74F791ED8D8650075500C /* CSStickyParallaxHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSStickyParallaxHeaderViewController.swift; sourceTree = "<group>"; };
-		E0F74F7B1ED98EDA0075500C /* CSStickyFlowLayoutHeaders-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSStickyFlowLayoutHeaders-Bridging-Header.h"; sourceTree = "<group>"; };
 		E0F74F821ED9945A0075500C /* CSCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSCell.swift; sourceTree = "<group>"; };
 		E0F74F831ED9945A0075500C /* CSCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSCell.xib; sourceTree = "<group>"; };
 		E0F74F8B1ED9A15D0075500C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -95,7 +94,6 @@
 				E0F74F5F1ED8CAAD0075500C /* Cells */,
 				E0F74F601ED8CAB20075500C /* ViewControllers */,
 				E0F74F5E1ED8CA9C0075500C /* SupportingFiles */,
-				E0F74F7B1ED98EDA0075500C /* CSStickyFlowLayoutHeaders-Bridging-Header.h */,
 			);
 			name = CSStickyFlowLayoutHeaders;
 			path = CSSickyFlowLayoutHeaders;
@@ -369,7 +367,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ru-platform.CSSickyFlowLayoutHeaders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CSSickyFlowLayoutHeaders/CSStickyFlowLayoutHeaders-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -386,7 +384,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ru-platform.CSSickyFlowLayoutHeaders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CSSickyFlowLayoutHeaders/CSStickyFlowLayoutHeaders-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
