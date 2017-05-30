@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E04308531EDE2D70009C90B8 /* CSStickyHeadersFlowLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04308521EDE2D70009C90B8 /* CSStickyHeadersFlowLayoutAttributes.swift */; };
 		E09097411EDB7CB5009EDB80 /* StickyHeaderFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09097401EDB7CB5009EDB80 /* StickyHeaderFlowLayout.swift */; };
 		E0F74F4D1ED8CA090075500C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F4C1ED8CA090075500C /* AppDelegate.swift */; };
 		E0F74F521ED8CA090075500C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F501ED8CA090075500C /* Main.storyboard */; };
@@ -23,14 +24,13 @@
 		E0F74F761ED8D8480075500C /* CSLockedHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F751ED8D8480075500C /* CSLockedHeaderViewController.swift */; };
 		E0F74F781ED8D8570075500C /* CSGrowHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F771ED8D8570075500C /* CSGrowHeaderViewController.swift */; };
 		E0F74F7A1ED8D8650075500C /* CSStickyParallaxHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F791ED8D8650075500C /* CSStickyParallaxHeaderViewController.swift */; };
-		E0F74F801ED98EDB0075500C /* CSStickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F7D1ED98EDB0075500C /* CSStickyHeaderFlowLayout.m */; };
-		E0F74F811ED98EDB0075500C /* CSStickyHeaderFlowLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F7F1ED98EDB0075500C /* CSStickyHeaderFlowLayoutAttributes.m */; };
 		E0F74F841ED9945A0075500C /* CSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74F821ED9945A0075500C /* CSCell.swift */; };
 		E0F74F851ED9945A0075500C /* CSCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F74F831ED9945A0075500C /* CSCell.xib */; };
 		E0F74F8C1ED9A15E0075500C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F74F8B1ED9A15D0075500C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E04308521EDE2D70009C90B8 /* CSStickyHeadersFlowLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSStickyHeadersFlowLayoutAttributes.swift; sourceTree = "<group>"; };
 		E09097401EDB7CB5009EDB80 /* StickyHeaderFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyHeaderFlowLayout.swift; sourceTree = "<group>"; };
 		E0F74F491ED8CA090075500C /* CSStickyFlowLayoutHeaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSStickyFlowLayoutHeaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F74F4C1ED8CA090075500C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,10 +50,6 @@
 		E0F74F771ED8D8570075500C /* CSGrowHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSGrowHeaderViewController.swift; sourceTree = "<group>"; };
 		E0F74F791ED8D8650075500C /* CSStickyParallaxHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSStickyParallaxHeaderViewController.swift; sourceTree = "<group>"; };
 		E0F74F7B1ED98EDA0075500C /* CSStickyFlowLayoutHeaders-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSStickyFlowLayoutHeaders-Bridging-Header.h"; sourceTree = "<group>"; };
-		E0F74F7C1ED98EDB0075500C /* CSStickyHeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayout.h; sourceTree = "<group>"; };
-		E0F74F7D1ED98EDB0075500C /* CSStickyHeaderFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSStickyHeaderFlowLayout.m; sourceTree = "<group>"; };
-		E0F74F7E1ED98EDB0075500C /* CSStickyHeaderFlowLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayoutAttributes.h; sourceTree = "<group>"; };
-		E0F74F7F1ED98EDB0075500C /* CSStickyHeaderFlowLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSStickyHeaderFlowLayoutAttributes.m; sourceTree = "<group>"; };
 		E0F74F821ED9945A0075500C /* CSCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSCell.swift; sourceTree = "<group>"; };
 		E0F74F831ED9945A0075500C /* CSCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSCell.xib; sourceTree = "<group>"; };
 		E0F74F8B1ED9A15D0075500C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -95,10 +91,7 @@
 				E0F74F501ED8CA090075500C /* Main.storyboard */,
 				E0F74F551ED8CA090075500C /* LaunchScreen.storyboard */,
 				E09097401EDB7CB5009EDB80 /* StickyHeaderFlowLayout.swift */,
-				E0F74F7C1ED98EDB0075500C /* CSStickyHeaderFlowLayout.h */,
-				E0F74F7D1ED98EDB0075500C /* CSStickyHeaderFlowLayout.m */,
-				E0F74F7E1ED98EDB0075500C /* CSStickyHeaderFlowLayoutAttributes.h */,
-				E0F74F7F1ED98EDB0075500C /* CSStickyHeaderFlowLayoutAttributes.m */,
+				E04308521EDE2D70009C90B8 /* CSStickyHeadersFlowLayoutAttributes.swift */,
 				E0F74F5F1ED8CAAD0075500C /* Cells */,
 				E0F74F601ED8CAB20075500C /* ViewControllers */,
 				E0F74F5E1ED8CA9C0075500C /* SupportingFiles */,
@@ -237,16 +230,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0F74F781ED8D8570075500C /* CSGrowHeaderViewController.swift in Sources */,
+				E04308531EDE2D70009C90B8 /* CSStickyHeadersFlowLayoutAttributes.swift in Sources */,
 				E0F74F741ED8D7B30075500C /* CSParallaxHeaderViewController.swift in Sources */,
 				E0F74F721ED8D3500075500C /* CSAlwaysOnTopHeader.swift in Sources */,
 				E0F74F761ED8D8480075500C /* CSLockedHeaderViewController.swift in Sources */,
 				E0F74F841ED9945A0075500C /* CSCell.swift in Sources */,
 				E09097411EDB7CB5009EDB80 /* StickyHeaderFlowLayout.swift in Sources */,
 				E0F74F701ED8D30F0075500C /* CSSectionHeader.swift in Sources */,
-				E0F74F801ED98EDB0075500C /* CSStickyHeaderFlowLayout.m in Sources */,
 				E0F74F4D1ED8CA090075500C /* AppDelegate.swift in Sources */,
 				E0F74F7A1ED8D8650075500C /* CSStickyParallaxHeaderViewController.swift in Sources */,
-				E0F74F811ED98EDB0075500C /* CSStickyHeaderFlowLayoutAttributes.m in Sources */,
 				E0F74F6A1ED8CC200075500C /* MyPulling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
