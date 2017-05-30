@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mnI-AW-t4N" customClass="CSStickyHeaderFlowLayout">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mnI-AW-t4N" customClass="CSStickyHeaderFlowLayout" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target">
                             <size key="itemSize" width="320" height="80"/>
                             <size key="headerReferenceSize" width="0.0" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -131,11 +131,11 @@
         <scene sceneID="RYv-CU-BcK">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="un6-zm-woq" customClass="CSLockedHeaderViewController" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" id="4r9-gG-BOv">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" id="4r9-gG-BOv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lVS-Ql-vzY" customClass="CSStickyHeaderFlowLayout">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lVS-Ql-vzY" customClass="CSStickyHeaderFlowLayout" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target">
                             <size key="itemSize" width="320" height="80"/>
                             <size key="headerReferenceSize" width="0.0" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -211,11 +211,11 @@
         <scene sceneID="1aN-b2-523">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="vbS-uy-tOM" customClass="CSGrowHeaderViewController" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" id="e0x-Xn-nLg">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" id="e0x-Xn-nLg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xhk-P1-D7k" customClass="CSStickyHeaderFlowLayout">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xhk-P1-D7k" customClass="CSStickyHeaderFlowLayout" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target">
                             <size key="itemSize" width="320" height="80"/>
                             <size key="headerReferenceSize" width="0.0" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -300,7 +300,7 @@
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" id="n5Z-NT-1OR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FWK-ae-ALv" customClass="CSStickyHeaderFlowLayout">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FWK-ae-ALv" customClass="CSStickyHeaderFlowLayout" customModule="CSStickyFlowLayoutHeaders" customModuleProvider="target">
                             <size key="itemSize" width="320" height="40"/>
                             <size key="headerReferenceSize" width="0.0" height="40"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
