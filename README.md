@@ -7,11 +7,16 @@ Types of headers which you can find here:
 
 Parallax header:
 
+![Screenshot](parallax.gif)
+
 Sticky header:
+![Screenshot2](locked.gif)
 
 Growing header:
+![Screenshot3](grow.gif)
 
 AlwaysOnTop header:
+![Screenshot4](onTop.gif)
 
 ## Installation:
 
