@@ -23,7 +23,7 @@ AlwaysOnTop header:
 
 ## Installation:
 
-Just move CSStickyHeaderFlowLayout.swift and CSStickyHeaderFlowLayoutAttributes.swift into your project then configure constraints using one of the examples.
+Move CSStickyHeaderFlowLayout.swift and CSStickyHeaderFlowLayoutAttributes.swift into your project then configure constraints using one of the examples in .xib files.
 
 You may also need to make CSStickyHeaderFlowLayout your collectionView layout. You can do that in viewDidLoad:
 
