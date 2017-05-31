@@ -41,4 +41,6 @@ You may also need to make CSStickyHeaderFlowLayout your collectionView layout. Y
         self.layout?.parallaxHeaderReferenceSize = CGSize(width: self.view.frame.size.width, height: 100)
     }
 ```
+## In progress:
 
+Cocoapods support, carthage support
